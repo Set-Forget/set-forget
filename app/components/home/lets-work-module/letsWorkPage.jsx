@@ -12,7 +12,7 @@ const LetsWorkPage = () => {
           <h2 className="reg-neue text-heading leading-tight">
             Let&apos;s work together!
           </h2>
-          <Button type="solid" text="Let's Talk" />
+          <Button type="solid" text="Let's Talk" link={"http://calendly.com/getsetandforget"}/>
         </div>
         <EmailForm />
       </Container>

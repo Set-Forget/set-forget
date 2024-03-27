@@ -8,7 +8,7 @@ import blueMarker from "../../../public/blue-marker.svg";
 const TeamPage = () => {
   const buttons = [
     { id: 1, name: "Our team" },
-    { id: 2, name: "Our partners" },
+    // { id: 2, name: "Our partners" },
     { id: 3, name: "Our offices" },
   ];
   const [activeGrid, setActiveGrid] = useState(buttons[0].id);
@@ -70,10 +70,10 @@ export default TeamPage;
 
 const TeamGrid = () => {
   const items = [
-    { id: 1 },
-    { id: 2 },
-    { id: 3 },
-    { id: 4 },
+    { id: 1, img: "https://drive.google.com/file/d/1CiAWqgaETch-6GC_DvFKMDzteNyZyYfb/view" },
+    { id: 2, img: "https://drive.google.com/file/d/1mhgdGSp0gZ1T6-blBEmJu_v2IsuNK-mP/view" },
+    { id: 3, img: "https://drive.google.com/file/d/1ylWueuHL8CsA2AdnM8aG7ZIGrSCFWOjp/view" },
+    { id: 4, img: "https://drive.google.com/file/d/1ylWueuHL8CsA2AdnM8aG7ZIGrSCFWOjp/view" },
     { id: 5 },
     { id: 6 },
     { id: 7 },
@@ -96,6 +96,7 @@ const TeamGrid = () => {
       {items.map((item, idx) => (
         <div key={idx} className="col-span-1 rounded-2xl bg-gradient-to-b from-gray-800 to-gray-700 h-64 p-3">
           {item.id}
+          <Image width={640} height={0} alt="profile pic" src={item.img}/>
         </div>
       ))}
     </motion.div>

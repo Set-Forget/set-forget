@@ -2,28 +2,28 @@ import React from "react";
 import Container from "../ecyce/container";
 import Image from "next/image";
 import drawnArrow from "../../../public/drawn-arrow.svg";
-import benCol from "../../images/logos/BenCollins.svg";
-import slack from "../../images/logos/Slack.svg";
-import oracle from "../../images/logos/Oracle.svg";
-import sandbox from "../../images/logos/Sandbox.svg";
-import kia from "../../images/logos/Kia.svg";
-import woo from "../../images/logos/Frame245.svg";
-import hub from "../../images/logos/Frame246.svg";
-import sf from "../../images/logos/Frame247.svg";
-import beko from "../../images/logos/Frame248.svg";
-import loreal from "../../images/logos/Frame249.svg";
-import quote from "../../../public/blueQuotes.svg";
+import bencollins from "../../images/logos/clients/bencollins.svg"
+import wbd from "../../images/logos/clients/wbd.svg"
+import airgas from "../../images/logos/clients/airgas.svg"
+import sandbox from "../../images/logos/clients/sandbox.svg"
+import kia from "../../images/logos/clients/kia.svg"
+import woo from "../../images/logos/clients/woo.svg"
+import gecko from "../../images/logos/clients/gecko.svg"
+import eh from "../../images/logos/clients/eh.svg"
+import beko from "../../images/logos/clients/becko.svg"
+import loreal from "../../images/logos/clients/loreal.svg"
+import quote from "../../../public/blueQuotes.svg"
 
 const ReviewsPage = () => {
   const logos = [
-    benCol,
-    slack,
-    oracle,
+    bencollins,
+    wbd,
+    airgas,
     sandbox,
     kia,
     woo,
-    hub,
-    sf,
+    gecko,
+    eh,
     beko,
     loreal,
   ];
@@ -32,7 +32,7 @@ const ReviewsPage = () => {
     <div className="w-full bg-sf-black text-sf-cream flex flex-col justify-center text-balance">
       <Container className={"w-full px-20 py-32 2xl:py-64 grid grid-cols-12"}>
         <div className="col-span-12">
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center justify-center space-x-8">
             <h1 className=" text-smallHeading 2xl:text-heading bold-neue">
               Expert allies
             </h1>
@@ -43,7 +43,7 @@ const ReviewsPage = () => {
           </div>
           <div className="mt-16 grid grid-cols-5 grid-rows-2">
             {logos.map((logo, index) => (
-              <Image key={index} src={logo} className="mx-auto" />
+              <Image key={index} src={logo} className="mx-auto hover:scale-105 transition-transform" />
             ))}
           </div>
         </div>

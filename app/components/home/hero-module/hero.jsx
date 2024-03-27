@@ -16,11 +16,11 @@ const Hero = () => {
           We dedicate to elevate your
           performance through innovative solutions that redefine efficiency.
         </p>
-        <span className="lg:relative lg:text-2xl hidden lg:block text-lg font-bold text-center text-balance mt-4 lg:mt-0">
+        <span className="relative lg:text-2xl hidden lg:block w-max text-lg font-bold text-center lg:text-start text-balance mt-4">
           Ready to transform your way of working?
           <Image src={arrow} className="absolute lg:top-8 lg:right-16 lg:rotate-12 -rotate-90 right-0 hidden lg:block" />
         </span>
-        <Button type={"solid"} text="Let's talk" className="self-center lg:self-start lg:w-64" />
+        <Button type={"solid"} text="Let's talk" className="self-center lg:self-start lg:w-64" link={"http://calendly.com/getsetandforget"}/>
       </Container>
     </div>
   );

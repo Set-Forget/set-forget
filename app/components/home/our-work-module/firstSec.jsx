@@ -9,7 +9,7 @@ const FirstSec = () => {
   return (
     <div className="w-full bg-sf-black text-sf-cream flex flex-col py-8">
       <Container className={"w-full py-16 grid grid-cols-12 gap-5 px-20"}>
-        <div className="relative col-span-6">
+        <div className="relative col-span-7 2xl:col-span-6">
           <h1 className="bold-neue text-heading">Here&apos;s what we do</h1>
           <h2 className="text-2xl my-4">
             Your automation department is here to help!
@@ -109,10 +109,8 @@ const FirstSec = () => {
               </div>
             </div>
           </div>
-          <Button type={"outline"} text={"See more!"} />
+          <Button type={"outline"} text={"See more!"} link={"/work"}/>
         </div>
-
-        <div className="c col-span-5"></div>
       </Container>
     </div>
   );

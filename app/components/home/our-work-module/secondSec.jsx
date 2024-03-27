@@ -1,16 +1,16 @@
 import React from 'react'
 import Container from '../../ecyce/container'
 import Image from "next/image";
-import benCollins from "../../../images/logos/BenCollins.svg";
-import kia from "../../../images/logos/Kia.svg";
-import oracle from "../../../images/logos/Oracle.svg";
-import sandbox from "../../../images/logos/Sandbox.svg";
-import slack from "../../../images/logos/Slack.svg";
+import benCollins from "../../../images/logos/clients/bencollins.svg";
+import gecko from "../../../images/logos/clients/gecko.svg";
+import beko from "../../../images/logos/clients/becko.svg";
+import sandbox from "../../../images/logos/clients/sandbox.svg";
+import kia from "../../../images/logos/clients/kia.svg";
 import Testimonials from './testimonials';
 import Button from '../../ecyce/buttons';
 
 const SecondSec = () => {
-    const images = [benCollins, kia, oracle, sandbox, slack];
+    const images = [benCollins, gecko, beko, sandbox, kia];
 
   return (
     <div className="w-full bg-sf-black text-sf-cream flex flex-col pb-48">
@@ -23,7 +23,7 @@ const SecondSec = () => {
                 ))}
             </div>
             <Testimonials/>
-            <Button type={'outline'} text={'Check out their experience!'}/>
+            <Button type={'outline'} text={'Check out their experience!'} link={"/reviews"}/>
         </Container>
     </div>
   )

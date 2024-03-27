@@ -51,13 +51,12 @@ const Page = () => {
           <Image src={redSparkle} className="absolute -top-10 -left-10" />
           <Image src={blueSparkle} className="absolute -bottom-10 -right-10" />
         </div>
-        <Link href='/about/team' className="col-span-12 mx-auto mt-8">
-          <Button
-            type="outline"
-            text="Meet out crew"
-          />
+        <Link href="/about/team" className="col-span-12 mx-auto mt-8">
+          <Button type="outline" text="Meet out crew" />
         </Link>
-        <ApproachSlider />
+        <div className="col-span-12 h-[800dvh] 2xl:h-[400dvh]">
+          <ApproachSlider />
+        </div>
         <h3 className="col-span-12 mt-28 text-4xl 2xl:text-5xl tracking-tighter">
           This is what we can do for you
         </h3>

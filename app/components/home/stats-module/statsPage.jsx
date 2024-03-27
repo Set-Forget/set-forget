@@ -19,11 +19,11 @@ const StatsPage = () => {
                 Set <b className="text-sf-lime poppins-bold">&</b> Forget?
               </h1>
             </div>
-            <div className="relative hidden lg:block">
+            <div className="relative hidden lg:block text-center">
               <h2 className="text-sf-dblue text-2xl w-[20ch] reg-neue">
                 Trusted by dozens of companies like yours.
               </h2>
-              <Image src={marker} className="absolute -top-10 -left-10" />
+              <Image src={marker} className="absolute -top-10 right-5" />
             </div>
           </div>
           <p className="lg:text-xl text-base col-span-12 lg:col-span-9 text-balance lg:my-12">
